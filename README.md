@@ -24,6 +24,8 @@ Once a volume is created, you can mount it to a container using the -v or --moun
 ```
 docker run -it -v <volume_name>:/data <image_name> /bin/bash
 ```
+`This command will mount the volume <volume_name> to the /data directory in the container. Any data written to the /data directory
+inside the container will be persisted in the volume on the host file system.`
 
 ### Below are a few more commands related to docker volumes:
 
@@ -52,5 +54,4 @@ docker run -d —mount source=pavan,target=/app <image-name>
 ```
 `Attach mount to a docker container`
 
-This command will mount the volume <volume_name> to the /data directory in the container. Any data written to the /data directory
-inside the container will be persisted in the volume on the host file system.
+
