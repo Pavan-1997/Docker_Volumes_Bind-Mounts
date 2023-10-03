@@ -27,15 +27,18 @@ docker run -it -v <volume_name>:/data <image_name> /bin/bash
 
 Below are a few more commands related to docker volumes
 
-	1. docker volume ls 
-	(To view all volumes)
-	2. docker volume create pavan
-	(Logical filesystem/partition on Host)
-	3. docker volume inspect pavan
-	(To get details of specific volume)
-	4. docker volume rm pavan
-	(Delete pavan volume created earlier)
-	5. docker run -d —mount source=pavan,target=/app <image-name>
+```
+docker volume ls
+```
+`To view all volumes`
+
+2. docker volume create pavan
+(Logical filesystem/partition on Host)
+3. docker volume inspect pavan
+(To get details of specific volume)
+4. docker volume rm pavan
+(Delete pavan volume created earlier)
+5. docker run -d —mount source=pavan,target=/app <image-name>
 (Attach mount to a docker container)
 
 This command will mount the volume <volume_name> to the /data directory in the container. Any data written to the /data directory
