@@ -18,3 +18,7 @@ docker volume create <volume_name>
 ```
 
 Once a volume is created, you can mount it to a container using the -v or --mount option when running a docker run command. 
+
+```
+docker run -it -v <volume_name>:/data <image_name> /bin/bash
+```
