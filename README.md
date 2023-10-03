@@ -57,4 +57,11 @@ docker run -d —mount source=pavan,target=/app <image-name>
 ---
 ## Docker Bind Mounts
 
+Bind mounts also aims to solve the same problem but in a complete different way.
 
+Using this way, user can mount a directory from the host file system into a container. Bind mounts have the same behavior as volumes, but
+are specified using a host path instead of a volume name. 
+
+```
+docker run -it -v <host_path>:<container_path> <ima
+```
