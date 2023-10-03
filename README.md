@@ -16,3 +16,5 @@ Volumes can be created and managed using the docker volume command. You can crea
 ```
 docker volume create <volume_name>
 ```
+
+Once a volume is created, you can mount it to a container using the -v or --mount option when running a docker run command. 
