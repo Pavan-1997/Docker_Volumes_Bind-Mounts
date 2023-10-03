@@ -54,4 +54,7 @@ docker run -d —mount source=pavan,target=/app <image-name>
 ```
 `Attach mount to a docker container`
 
+---
+## Docker Bind Mounts
+
 
