@@ -69,9 +69,9 @@ docker run -it -v <host_path>:<container_path> <image_name> /bin/bash
 ---
 ## Key Differences between Volumes and Bind Directory on a host as a Mount
 
-Volumes are managed, created, mounted and deleted using the Docker API. However, Volumes are more flexible than bind mounts, as 
+- Volumes are managed, created, mounted and deleted using the Docker API. However, Volumes are more flexible than bind mounts, as 
 they can be managed and backed up separately from the host file system, and can be moved between containers and hosts.
 
-In a nutshell, Bind Directory on a host as a Mount are appropriate for simple use cases where you need to mount a directory from the host file system into
+- In a nutshell, Bind Directory on a host as a Mount are appropriate for simple use cases where you need to mount a directory from the host file system into
 a container, while volumes are better suited for more complex use cases where you need more control over the data being persisted
 in the container.
