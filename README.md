@@ -32,14 +32,25 @@ docker volume ls
 ```
 `To view all volumes`
 
+```
 docker volume create pavan
-Logical filesystem/partition on Host
+```
+`Logical filesystem/partition on Host`
+
+```
 docker volume inspect pavan
-To get details of specific volume
+```
+`To get details of specific volume`
+
+```
 docker volume rm pavan
-Delete pavan volume created earlier
+```
+`Delete pavan volume created earlier`
+
+```
 docker run -d —mount source=pavan,target=/app <image-name>
-Attach mount to a docker container
+```
+`Attach mount to a docker container`
 
 This command will mount the volume <volume_name> to the /data directory in the container. Any data written to the /data directory
 inside the container will be persisted in the volume on the host file system.
