@@ -6,3 +6,5 @@ There are 2 different ways how docker solves this problem.
 
 - Volumes
 - Bind Directory on a host as a Mount
+
+Volumes aims to solve the same problem by providing a way to store data on the host file system, separate from the container's file system, so that the data can persist even if the container is deleted and recreated.
