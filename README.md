@@ -4,5 +4,5 @@ It is a very common requirement to persist the data in a Docker container beyond
 
 There are 2 different ways how docker solves this problem.
 
-Volumes
-Bind Directory on a host as a Mount
+- Volumes
+- Bind Directory on a host as a Mount
